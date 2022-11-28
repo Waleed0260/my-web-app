@@ -1,0 +1,37 @@
+.font{
+    height: 0.4rem;
+    width: 29vw;
+    background-color: rgb(187, 183, 181);
+    border-radius: 10px;
+}
+.front{
+    display: flex;
+    flex-direction: column;
+}
+.font>div{
+    height: 0.4rem;
+    width: 28vw;
+    background-color: var(--black);
+    border-radius: 10px;
+}
+   .font>.css-react{
+    width: 26vw;
+}
+.font>.java{
+    width: 22vw;
+}
+
+@media screen and (max-width:480px) {
+    .font{
+        width: 90vw;
+    }
+    .font>div{
+        width: 88vw;
+    }
+    .font>.css-react{
+        width: 80vw;
+    }
+    .font>.java{
+        width: 60vw;
+    }
+}

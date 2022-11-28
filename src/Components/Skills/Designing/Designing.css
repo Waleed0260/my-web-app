@@ -1,0 +1,41 @@
+.des{
+    height: 0.4rem;
+    width: 23.95vw;
+    background-color: rgb(187, 183, 181);
+    border-radius: 10px;
+}
+.des>div{
+    width: 23vw;
+    height: 0.4rem;
+    background-color: var(--black);
+    border-radius: 10px;
+
+}
+
+.design{
+    display: flex;
+    flex-direction: column;
+}
+
+.des>.fram-anim{
+    width: 21vw;
+}
+.des>.word{
+    width: 17vw;
+}
+
+
+@media screen and (max-width:480px) {
+    .des{
+        width: 90vw;
+    }
+    .des>div{
+        width: 88vw;
+    }
+    .des>.fram-anim{
+        width: 80vw;
+    }
+    .des>.word{
+        width: 60vw;
+    }
+}

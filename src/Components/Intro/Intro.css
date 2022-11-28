@@ -1,0 +1,156 @@
+.intro{
+    display: flex;
+    height: 33rem;
+    margin: 6rem;
+    justify-content: space-between;
+}
+.i-left{
+    flex: 1;
+    flex-direction: column;
+    gap: 9rem;
+    position: relative;
+}
+.i-name{
+    display: flex;
+    flex-direction: column;
+}
+.i-name>span>h1{
+    color: var(--black);
+    font-size: 3rem;
+    font-weight: bold;
+}
+.i-name>span:nth-child(2)>h1{
+    color: var(--orange);
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: -2rem;
+}
+.i-name>:nth-child(3){
+    font-weight: 100px;
+    font-size: 1rem;
+    color: var(--gray);
+    margin-top: -15px;
+}
+
+.i-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 1.2rem;
+    margin-top: 20px;
+}
+.i-button>a{
+    text-decoration: none;
+    color: white;
+}
+.i-button:hover>a{
+    color: var(--orange);
+}
+.i-icons{
+    display: flex;
+    margin-top: 3rem;
+    gap: 0rem;
+}
+.i-icons>*{
+    transform: scale(0.5);
+}
+.i-icons>*:hover{
+    cursor: pointer;
+}
+
+
+
+.i-right{
+    flex: 1;
+    position: relative;
+}
+
+.i-right>*{
+    position: absolute;
+    z-index: 1;
+}
+
+.i-right>:nth-child(1){
+    transform: scale(0.69);
+    left: -15%;
+    top: -9%;
+}
+.i-right>:nth-child(2){
+    top: -4.6rem;
+    transform: scale(0.67);
+    left: -3rem;
+}
+.i-right>:nth-child(3){
+    transform: scale(1.4);
+    left: 28%;
+}
+.i-right>:nth-child(4){
+    transform: scale(0.6);
+    top: -18%;
+    left: -24%;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.blur{
+    position: absolute;
+    width: 22rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: #25115c;
+    z-index: -9;
+    top: 18%;
+    left: 56%;
+    filter: blur(72px);
+}
+
+@media screen and (max-width:768px) {
+    .intro{
+        position: relative;
+        left: -180px;
+    }
+    .floating-div:nth-of-type(1) {
+        margin-top: 100px;
+        margin-left: 10vw;
+    }    
+    .floating-div:nth-of-type(2){
+        margin-left: -2vw;
+    }
+    .moji{
+        margin-left: -70px;
+    }
+    .i-right>:nth-child(3){
+        left: 220%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .intro{
+        position: relative;
+        left: -130px;
+        top: -90px;
+    }
+    .i-icons{
+        margin-top: 1rem;
+    }
+    .i-right{
+        position: relative;
+        top: 600px;
+        /* left: 0px; */
+        right: 370px;
+    }
+    .i-right>:nth-child(3){
+        left: 150px;
+    }
+    .floating-div:nth-of-type(1) {
+        margin-top: 100px;
+        margin-left: 50vw;
+    }    
+    .floating-div:nth-of-type(2){
+        margin-left: 32vw;
+    }
+    .moji{
+        margin-left: 270px;
+    }
+}
